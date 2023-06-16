@@ -8,7 +8,6 @@ def encriptar(texto):
 
 def desencriptar(texto):
     textoFinal = ""
-    contador = 0
     for letra in texto:
         ascii = ord(letra)
         ascii += 3
