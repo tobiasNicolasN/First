@@ -34,14 +34,23 @@ def desencriptarArchivo(rutaArchivo):
     archivo.close()
 
 def usoPrograma():
-    print("Seleccione una opcion para archivo de texto:")
-    print("A - Para encriptar archivo")
-    print("B - Para desencriptar archivo")
-    uso = input("> ")
     rutaArchivo = input("Ingrese la ruta de su archivo de texto: ")
-    if uso == "A":
+    print("Seleccione una opcion para archivo de texto:")
+    print("A - Encriptar archivo")
+    print("B - Desencriptar archivo")
+    print("C - Salir")
+    uso = input("> ")
+    usoA = ["A","a"]
+    usoB = ["B","b"]
+    usoC = ["C","c"]
+    if uso in usoA :
         encriptarArchivo(rutaArchivo)
-    else:
+    elif uso in usoB :
         desencriptarArchivo(rutaArchivo)
+    elif uso in usoC :
+        exit()
+    else:
+        print("Error al seleccionar la opcion, intente nuevamente.")
+        usoPrograma()
         
 usoPrograma()
