@@ -37,8 +37,7 @@ class Arbol:
     def invertirArbolRecursivo(self, nodo):
         if nodo is None:
             return None
-        nodo.left = self.invertirArbolRecursivo(nodo.right)
-        nodo.right = self.invertirArbolRecursivo(nodo.left)
+        nodo.left, nodo.right = self.invertirArbolRecursivo(nodo.right), self.invertirArbolRecursivo(nodo.left)
         return nodo
 
     def invertirArbol(self):
