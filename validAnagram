@@ -1,0 +1,9 @@
+def isAnagram(s, t):
+    listaS = list(s)
+    listaT = list(t)
+    for letter in listaT:
+        if listaT.count(letter) == listaS.count(letter):
+            continue
+        else:
+            return False
+    return True
