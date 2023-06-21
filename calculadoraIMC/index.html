@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Calculadora de índice de Masa Corporal</title>
+    </head>
+
+    <body>
+        
+        <br />
+        <br />
+
+        <h1 class="titulo">
+            Calculadora de Índice de Masa Corporal
+        </h1>
+        <h1 class="titulo">
+            (IMC)
+        </h1>
+
+        <br />
+        <br />
+
+        <p id="definicion">
+            El índice de masa corporal (IMC) es un número que se calcula con base en el peso y la estatura de la persona. 
+            Para la mayoría de las personas, el IMC es un indicador confiable de la gordura y se usa para identificar las categorías de peso que pueden llevar a problemas de salud.
+        </p>
+
+        <br />
+        <br />
+
+        <table class="customTable">
+            <thead>
+              <tr>
+                <th>Delgadez</th>
+                <th>Normal</th>
+                <th>Sobrepeso</th>
+                <th>Obesidad</th>
+              </tr>
+            </thead>
+            <tbody class="textoTabla">
+              <tr>
+                <td>IMC menor a 19</td>
+                <td>IMC entre 20 y 25</td>
+                <td>IMC entre 26 y 30</td>
+                <td>IMC mayor a 30</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <br />
+          <br />
+
+        <div id="calculadora">
+          <label for="peso">Ingrese su peso en kg</label>
+          <br />
+          <input type="number" id="peso" value="" />
+  
+          <br />
+          
+          <label for="altura">Ingrese su altura en cm</label>
+          <br />
+          <input type="number" id="altura" value="" />
+          <br />
+          <br />          
+          
+          <a onclick="calcular()" href="#" class="myButton">Calcular</a>
+
+          <p id="result"></p>
+          
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+
+</html>
